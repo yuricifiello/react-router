@@ -5,6 +5,7 @@ import Home from "./components/layouts/Home";
 import ChiSiamo from "./components/layouts/ChiSiamo";
 import PostList from "./components/layouts/PostList";
 import Navbar from "./components/layouts/Navbar";
+import PostDetail from "./components/layouts/PostDetail";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/chi-siamo" element={<ChiSiamo />} />
           <Route path="/posts" element={<PostList />} />
+          <Route path="/posts/:id" element={<PostDetail />} /> {}
         </Routes>
       </div>
     </>
